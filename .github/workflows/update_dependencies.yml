@@ -1,0 +1,20 @@
+name: Update NPM Dependencies
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 0 * * *' # This schedule runs the action daily at midnight
+
+jobs:
+  update-dependencies:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Run NPM Dependency Update Action
+        uses: itamarsher/test_action
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
