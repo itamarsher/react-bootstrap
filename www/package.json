@@ -25,7 +25,7 @@
     "bootstrap": "^5.3.0",
     "clsx": "^1.2.1",
     "docusaurus-plugin-sass": "^0.2.3",
-    "dom-helpers": "^5.2.1",
+    "dom-helpers": "^6.0.0",
     "formik": "^2.2.9",
     "holderjs": "^2.9.9",
     "lodash.camelcase": "^4.3.0",
